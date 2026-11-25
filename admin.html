@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لوحة التحكم | مؤسسة النضج</title>
+  <link rel="stylesheet" href="/admin.css" />
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="auth-card" id="login-view" aria-labelledby="login-title">
+      <div class="admin-mark">النضج</div>
+      <p class="eyebrow">مساحة الإدارة</p>
+      <h1 id="login-title">مرحبًا بك في لوحة التحكم</h1>
+      <p class="muted">سجّل الدخول لإدارة بيانات التواصل ومحتوى الموقع ورسائل الزوار.</p>
+      <form id="login-form" class="stack-form">
+        <label>البريد الإداري<input type="email" name="email" value="annodje.ml@gmail.com" autocomplete="username" required /></label>
+        <label>كلمة المرور<input type="password" name="password" autocomplete="current-password" required /></label>
+        <button class="primary-button" type="submit">دخول إلى اللوحة</button>
+        <p class="form-status" id="login-status" role="alert"></p>
+      </form>
+      <a class="back-link" href="/">العودة إلى الموقع ←</a>
+    </section>
+
+    <section class="dashboard" id="dashboard-view" hidden>
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">مؤسسة النضج للتربية والتعليم الخصوصي</p>
+          <h1>لوحة التحكم</h1>
+          <p class="muted">أدر المعلومات التي تظهر للزوار وراجع الرسائل الواردة.</p>
+        </div>
+        <div class="header-actions"><a class="ghost-button" href="/" target="_blank" rel="noreferrer">معاينة الموقع</a><button class="ghost-button" id="logout-button" type="button">تسجيل الخروج</button></div>
+      </header>
+
+      <div class="dashboard-grid">
+        <section class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">المعلومات الأساسية</p><h2>بيانات التواصل</h2></div><span class="panel-icon">✦</span></div>
+          <form id="content-form" class="stack-form">
+            <label>رقم الهاتف<input type="tel" name="phone" required /></label>
+            <label>البريد الإلكتروني<input type="email" name="email" required /></label>
+            <label>الشريط الإعلاني<input type="text" name="announcement_ar" maxlength="1000" required /></label>
+            <label>الوصف التعريفي في الواجهة<textarea name="hero_lead_ar" rows="4" maxlength="1000" required></textarea></label>
+            <button class="primary-button" type="submit">حفظ التعديلات</button>
+            <p class="form-status" id="content-status" role="status"></p>
+          </form>
+        </section>
+
+        <section class="panel messages-panel">
+          <div class="panel-heading"><div><p class="eyebrow">صندوق الوارد</p><h2>رسائل التواصل</h2></div><button class="ghost-button" id="refresh-messages" type="button">تحديث</button></div>
+          <div id="messages-list" class="messages-list"><p class="muted">جارٍ تحميل الرسائل…</p></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="/admin.js" defer></script>
+</body>
+</html>
