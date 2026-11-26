@@ -1119,5 +1119,26 @@ window.I18N_DICT = {
 "العودة إلى الصفحة الرئيسية <span aria-hidden=\"true\">←</span>": [
 "Retour à la page d'accueil <span aria-hidden=\"true\">←</span>",
 "Back to the home page <span aria-hidden=\"true\">←</span>"
-]
+],
+"خدمات الأسر": ["Services aux familles", "Family services"],
+"طلب شهادة": ["Demande de certificat", "Certificate request"],
+"اختر نوع الشهادة واملأ المعلومات، ثم أرسل الطلب إلى المؤسسة عبر واتساب، أو اطبع الورقة ووقّعها وسلّمها.": ["Choisissez le type de certificat et remplissez les informations, puis envoyez la demande à l'établissement par WhatsApp, ou imprimez la feuille, signez-la et remettez-la.", "Choose the type of certificate and fill in the details, then send the request to the school on WhatsApp, or print the sheet, sign it and hand it in."],
+"نموذج طلب شهادة": ["Formulaire de demande de certificat", "Certificate request form"],
+"جميع الحقول مطلوبة": ["Tous les champs sont obligatoires", "All fields are required"],
+"نوع الشهادة": ["Type de certificat", "Type of certificate"],
+"شهادة المغادرة": ["Certificat de départ", "Leaving certificate"],
+"شهادة مدرسية": ["Certificat de scolarité", "School certificate"],
+"اسم ولي الأمر": ["Nom du tuteur", "Guardian's name"],
+"الاسم الكامل لولي الأمر": ["Nom complet du tuteur", "Guardian's full name"],
+"رقم البطاقة الوطنية (CIN)": ["Numéro de la carte nationale (CIN)", "National ID number (CIN)"],
+"مثال: AB123456": ["Exemple : AB123456", "Example: AB123456"],
+"اسم التلميذ(ة)": ["Nom de l'élève", "Student's name"],
+"الاسم الكامل للتلميذ(ة)": ["Nom complet de l'élève", "Student's full name"],
+"سبب الطلب": ["Motif de la demande", "Reason for the request"],
+"اذكر سبب طلب الشهادة": ["Indiquez le motif de la demande", "State the reason for the request"],
+"إرسال الطلب عبر واتساب": ["Envoyer la demande par WhatsApp", "Send the request on WhatsApp"],
+"طباعة الورقة / PDF": ["Imprimer la feuille / PDF", "Print the sheet / PDF"],
+"لا يتم حفظ رقم البطاقة الوطنية ولا إرساله إلى أي خادم. يبقى في هذه الصفحة فقط، ويصل إلى المؤسسة عبر رسالة واتساب التي ترسلها بنفسك.": ["Le numéro de la carte nationale n'est ni enregistré ni envoyé à un serveur. Il reste uniquement sur cette page et n'arrive à l'établissement que par le message WhatsApp que vous envoyez vous-même.", "The national ID number is not saved or sent to any server. It stays on this page only and reaches the school only through the WhatsApp message you send yourself."],
+"ESP 2، Bd Bouakkaz، مراكش، المملكة المغربية": ["ESP 2, Bd Bouakkaz, Marrakech, Maroc", "ESP 2, Bd Bouakkaz, Marrakech, Morocco"],
+"خريطة مؤسسة النضج": ["Plan de l'Institution Annodje", "Map of Institution Annodje"]
 };
