@@ -192,3 +192,9 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .lightbox video{max-width:100%;max-height:74vh;border-radius:12px;background:#000}
 .lightbox video[hidden],.lightbox img[hidden]{display:none}
+
+.activity-years{display:flex;flex-wrap:wrap;gap:10px;margin-top:clamp(20px,3vw,32px)}
+.activity-year{border:2px solid var(--navy);background:#fff;color:var(--navy);font:inherit;font-weight:600;padding:6px 20px;border-radius:999px;cursor:pointer}
+.activity-year.is-active{background:var(--navy);color:#fff}
+.activity-more{display:block;margin:clamp(24px,3vw,40px) auto 0;border:0;background:var(--orange);color:#fff;font:inherit;font-weight:700;font-size:17px;padding:12px 36px;border-radius:999px;cursor:pointer;box-shadow:0 8px 20px rgba(22,50,79,.18)}
+.activity-more[hidden],.lightbox__nav[hidden]{display:none}
