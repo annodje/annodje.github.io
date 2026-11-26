@@ -1,0 +1,24 @@
+.cert-layout{max-width:720px;margin:0 auto}
+.cert-actions{display:grid;gap:.75rem;margin-top:.5rem}
+.cert-print{background:#fff;color:#16324f;border:2px solid #16324f}
+.cert-print:hover{background:#16324f;color:#fff}
+.cert-privacy{margin:1rem 0 0;font-size:.85rem;line-height:1.7;color:#5a6b7b}
+#print-sheet{display:none}
+@media print{
+  @page{size:A4;margin:18mm}
+  body>*:not(#print-sheet){display:none!important}
+  body{background:#fff!important}
+  #print-sheet{display:block!important;color:#111;font-family:"IBM Plex Sans Arabic",Tajawal,Arial,sans-serif;font-size:14pt}
+  #print-sheet .ps-head{display:flex;align-items:center;gap:14px;border-bottom:2px solid #16324f;padding-bottom:12px}
+  #print-sheet .ps-head img{width:72px;height:72px;object-fit:contain;border-radius:50%}
+  #print-sheet .ps-head strong{display:block;font-size:16pt;color:#16324f}
+  #print-sheet .ps-title{text-align:center;font-size:20pt;margin:28px 0 22px;color:#16324f}
+  #print-sheet .ps-table{width:100%;border-collapse:collapse}
+  #print-sheet .ps-table th,#print-sheet .ps-table td{border:1px solid #666;padding:10px 12px;text-align:start;vertical-align:top}
+  #print-sheet .ps-table th{width:36%;background:#f1f1f1}
+  #print-sheet .ps-table tr:last-child td{height:90px}
+  #print-sheet .ps-foot{margin-top:40px}
+  #print-sheet .ps-recv{font-size:13pt}
+  #print-sheet .ps-sign{margin-top:36px;width:55%;margin-inline-start:auto}
+  #print-sheet .ps-line{height:80px;border:1px solid #666;margin-top:8px}
+}
