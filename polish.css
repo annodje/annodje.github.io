@@ -214,3 +214,11 @@ html[lang^="ar"] .eyebrow, html[lang^="ar"] .eyebrow * { letter-spacing: 0 !impo
 @media (max-width: 700px) { .value-card { padding-top: 62px !important; } .value-card--dark { padding-top: 22px !important; } }
 /* campus block: text only after the photo was removed */
 .campus__layout { display: block !important; max-width: 760px; margin-inline: auto; }
+
+/* core values grid as a swipe row (fix) */
+@media (max-width: 700px) {
+  .core-values { display: block !important; }
+  .core-values__grid { display: flex !important; flex-wrap: nowrap; gap: 10px !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 2px 2px 12px; overscroll-behavior-x: contain; scrollbar-width: none; margin-top: 14px; }
+  .core-values__grid::-webkit-scrollbar { display: none; }
+  .core-values__grid .core-value { flex: 0 0 56%; scroll-snap-align: center; min-height: 0 !important; }
+}
