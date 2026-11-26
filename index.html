@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div id="splash" aria-hidden="true"><div class="splash__inner"><div class="splash__badge"><img class="splash__logo" src="/manus-storage/Untitleddesign_24f65efa.png" alt="" /><span class="splash__mark">ن</span></div><p class="splash__name">مؤسسة النضج</p><p class="splash__sub">للتربية والتعليم الخصوصي</p><div class="splash__bar"></div></div></div>
     <div class="announcement">
       <div class="container announcement__inner">
         <span class="announcement__dot"></span>
@@ -235,5 +236,17 @@
 
     <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand brand--footer" href="#top"><img class="brand-logo" src="/manus-storage/Untitleddesign_24f65efa.png" alt="شعار مؤسسة النضج للتربية والتعليم الخصوصي" /><span class="brand-copy"><strong>النضج</strong><small>للتربية والتعليم الخصوصي</small></span></a><p>نرافق المتعلم من الفضول<br />إلى الأثر.</p></div><div class="footer-links"><span>استكشف</span><a href="#about" data-i18n="nav.about">من نحن</a><a href="#programs">البرامج</a><a href="#method" data-i18n="nav.method">منهجيتنا</a></div><div class="footer-links"><span>تواصل</span><a href="mailto:annodje.ml@gmail.com">annodje.ml@gmail.com</a><a href="tel:+212671979707">0671979707</a><span>مراكش، المملكة المغربية</span></div><div class="footer-social"><span>تابع رحلتنا</span><div><a href="#contact" aria-label="انستغرام">ig</a><a href="#contact" aria-label="لينكدإن">in</a><a href="#contact" aria-label="إكس">x</a></div></div></div><div class="container footer-bottom"><span>© 2026 مؤسسة النضج للتربية والتعليم الخصوصي</span><span>صُمم بشغف للتعلّم</span></div></footer>
     <script src="/app.js"></script>
+    <script>
+      (function () {
+        var s = document.getElementById('splash');
+        if (s) {
+          var i = s.querySelector('img');
+          var f = function () { s.classList.add('splash--nologo'); };
+          if (i) { i.addEventListener('error', f); if (i.complete && i.naturalWidth === 0) f(); }
+          setTimeout(function () { s.classList.add('splash--hide'); setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 800); }, 2300);
+        }
+        document.querySelectorAll('.brand-logo').forEach(function (im) { im.addEventListener('error', function () { im.style.display = 'none'; }); if (im.complete && im.naturalWidth === 0) im.style.display = 'none'; });
+      })();
+    </script>
   </body>
 </html>
