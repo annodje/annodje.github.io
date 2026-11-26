@@ -109,3 +109,11 @@ html[dir="ltr"] body { text-align: left; }
 @media (max-width: 700px) {
   .lang-ltr .language-switcher { margin-left: 0; margin-right: 8px; padding-left: 7px; padding-right: 20px; }
 }
+
+
+/* تحديثات مؤسسة تعليمية متعددة المراحل */
+.hero-image-wrap img, .campus__frame img { object-position: center center; }
+.programs-grid--levels { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.programs-grid--levels .program-card { min-height: 390px; }
+@media (max-width: 1050px) { .programs-grid--levels { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .programs-grid--levels { grid-template-columns: 1fr; } }
