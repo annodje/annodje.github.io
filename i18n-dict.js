@@ -72,9 +72,9 @@ window.I18N_DICT = {
 "À l'Institution Annodje, nous accompagnons vos enfants de la maternelle et du primaire jusqu'au collège et au lycée, dans un environnement sûr qui allie excellence académique et construction de la personnalité.",
 "At Institution Annodje, we guide your children from preschool and primary to middle and high school, in a safe environment that combines academic excellence with character building."
 ],
-"اكتشف برامجنا <span aria-hidden=\"true\">←</span>": [
-"Découvrez nos programmes <span aria-hidden=\"true\">←</span>",
-"Discover our programs <span aria-hidden=\"true\">←</span>"
+"أنشطة المؤسسة <span aria-hidden=\"true\">←</span>": [
+"Activités de l'institution <span aria-hidden=\"true\">←</span>",
+"Institution activities <span aria-hidden=\"true\">←</span>"
 ],
 "<span class=\"play-mark\" aria-hidden=\"true\">↗</span> تعرّف على قصتنا": [
 "<span class=\"play-mark\" aria-hidden=\"true\">↗</span> Découvrez notre histoire",
