@@ -58,7 +58,7 @@
   }
   render(true);
   document.addEventListener("langchange", function () { var keep = shown; render(true); if (!LIMIT) { while (shown < keep && !more.hidden) render(false); labels(); } });
-  function capText(p) { return (isAr() ? (p.alt || "") : T(act.title)) + " (" + (cur + 1) + "/" + act.photos.length + ")"; }
+  function capText(p) { var n = "(" + (cur + 1) + "/" + act.photos.length + ")"; return isAr() ? (p.alt || "") + " " + n : n; }
   function show(i) {
     var one = act.photos.length < 2; box.querySelector(".lightbox__nav--next").hidden = one; box.querySelector(".lightbox__nav--prev").hidden = one;
     cur = (i + act.photos.length) % act.photos.length; var p = act.photos[cur]; vid.pause();
