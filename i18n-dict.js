@@ -1028,13 +1028,21 @@ window.I18N_DICT = {
 "Heures de contact",
 "Contact hours"
 ],
-"الإثنين — الجمعة": [
-"Lundi — Vendredi",
-"Monday — Friday"
+"الإثنين — الخميس": [
+"Lundi — Jeudi",
+"Monday — Thursday"
 ],
-"09:00 صباحًا — 05:00 مساءً": [
-"09h00 — 17h00",
-"9:00 AM — 5:00 PM"
+"08:00 صباحًا — 03:00 مساءً": [
+"08h00 — 15h00",
+"8:00 AM — 3:00 PM"
+],
+"الجمعة والسبت": [
+"Vendredi et samedi",
+"Friday and Saturday"
+],
+"09:00 صباحًا — 12:00 ظهرًا": [
+"09h00 — 12h00",
+"9:00 AM — 12:00 PM"
 ],
 "خريطة الموقع": [
 "Plan d'accès",
