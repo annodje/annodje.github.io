@@ -50,8 +50,10 @@
       c.save(); c.beginPath(); c.arc(lx + 70, ly, 70, 0, Math.PI * 2); c.clip(); c.drawImage(logo, lx, ly - 70, 140, 140); c.restore();
     }
     var tx0 = rtl ? W - M - 140 - 30 : M + 140 + 30;
-    tx(t.school, tx0, ly - 20, 36, 700, "#16324f");
-    tx(t.city, tx0, ly + 30, 32, 400, "#444");
+    c.font = "700 34px " + FONT;
+    var hl = wrap(c, t.school, W - 2 * M - 170), hy = ly - (hl.length * 44 + 40) / 2 + 22;
+    for (var h = 0; h < hl.length; h++) tx(hl[h], tx0, hy + h * 44, 34, 700, "#16324f");
+    tx(t.city, tx0, hy + hl.length * 44 + 10, 30, 400, "#444");
     c.fillStyle = "#16324f"; c.fillRect(M, 270, W - 2 * M, 4);
     tx(t.title[type], W / 2, 380, 58, 700, "#16324f", "center");
     var y = 470, labW = Math.round((W - 2 * M) * 0.36), valW = W - 2 * M - labW, pad = 22, lh = 46;
@@ -59,12 +61,14 @@
     for (var i = 0; i < t.rows.length; i++) {
       c.font = "400 34px " + FONT;
       var lines = wrap(c, d[i], valW - 2 * pad);
-      var rh = Math.max(96, lines.length * lh + 2 * pad);
+      c.font = "700 32px " + FONT;
+      var ll = wrap(c, t.rows[i], labW - 2 * pad);
+      var rh = Math.max(96, lines.length * lh + 2 * pad, ll.length * lh + 2 * pad);
       if (i === t.rows.length - 1) rh = Math.max(rh, 220);
       var labX = rtl ? W - M - labW : M, valX = rtl ? M : M + labW;
       c.fillStyle = "#eeeeee"; c.fillRect(labX, y, labW, rh);
       c.strokeRect(labX, y, labW, rh); c.strokeRect(valX, y, valW, rh);
-      tx(t.rows[i], rtl ? labX + labW - pad : labX + pad, y + rh / 2, 32, 700, "#111");
+      for (var q = 0; q < ll.length; q++) tx(ll[q], rtl ? labX + labW - pad : labX + pad, y + rh / 2 + (q - (ll.length - 1) / 2) * lh, 32, 700, "#111");
       for (var j = 0; j < lines.length; j++) tx(lines[j], rtl ? valX + valW - pad : valX + pad, y + pad + lh / 2 + j * lh + (rh - 2 * pad - lines.length * lh) / 2 * (i === t.rows.length - 1 ? 0 : 1), 34, 400, "#111");
       y += rh;
     }
