@@ -1103,5 +1103,9 @@ window.I18N_DICT = {
 "تواصل مع مؤسسة النضج للتربية والتعليم الخصوصي.": [
 "Contactez Institution Annodje pour l'éducation et l'enseignement privé.",
 "Get in touch with Institution Annodje for Private Education and Teaching."
+],
+"العودة إلى الصفحة الرئيسية <span aria-hidden=\"true\">←</span>": [
+"Retour à la page d'accueil <span aria-hidden=\"true\">←</span>",
+"Back to the home page <span aria-hidden=\"true\">←</span>"
 ]
 };
