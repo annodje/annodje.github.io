@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16324f" />
+    <meta name="description" content="جميع أنشطة مؤسسة النضج بالصور." />
+    <title>أنشطة المؤسسة | مؤسسة النضج</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css?v=8" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="/" aria-label="العودة إلى الصفحة الرئيسية">
+          <img class="brand-logo" src="/1-logo.jpg?v=1" alt="شعار مؤسسة النضج للتربية والتعليم الخصوصي" />
+          <span class="brand-copy"><strong>النضج</strong><small>للتربية والتعليم الخصوصي</small></span>
+        </a>
+        <select class="language-switcher" id="language-switcher" aria-label="اختيار اللغة"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select>
+        <a class="nav-cta" href="/">العودة إلى الصفحة الرئيسية <span aria-hidden="true">←</span></a>
+      </div>
+    </header>
+    <main>
+      <section class="activities section-space activities--page" id="activities" aria-labelledby="activities-title">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="overline">الأنشطة</p><h2 id="activities-title">أنشطة المؤسسة</h2></div>
+            <p>اضغط على أي نشاط لمشاهدة صوره.</p>
+          </div>
+          <div class="activity-cards" id="activity-cards"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-bottom"><span>© 2026 مؤسسة النضج للتربية والتعليم الخصوصي</span><a href="/">العودة إلى الصفحة الرئيسية</a></div></footer>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="معرض صور الأنشطة" hidden>
+      <button class="lightbox__close" type="button" aria-label="إغلاق">×</button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="الصورة التالية">‹</button>
+      <figure><strong id="lightbox-title" class="lightbox__title" dir="auto"></strong><img id="lightbox-img" alt="" /><video id="lightbox-video" controls playsinline preload="metadata" hidden></video><figcaption id="lightbox-cap"></figcaption></figure>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="الصورة السابقة">›</button>
+    </div>
+    <script src="/i18n-dict.js?v=1"></script>
+    <script src="/i18n.js?v=1"></script>
+    <script src="/activities-manual.js?v=1"></script>
+    <script src="/activities-fb.js?v=1"></script>
+    <script src="/activities.js?v=1"></script>
+  </body>
+</html>
