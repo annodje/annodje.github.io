@@ -2,6 +2,7 @@
 .cert-actions{display:grid;gap:.75rem;margin-top:.5rem}
 .cert-print{background:#fff;color:#16324f;border:2px solid #16324f}
 .cert-print:hover{background:#16324f;color:#fff}
+.cert-hint{margin:.75rem 0 0;font-size:.85rem;line-height:1.7;color:#5a6b7b}
 .cert-privacy{margin:1rem 0 0;font-size:.85rem;line-height:1.7;color:#5a6b7b}
 #print-sheet{display:none}
 @media print{
