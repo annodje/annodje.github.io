@@ -218,7 +218,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .activity-cards { grid-template-columns: repeat(3, 1fr); gap: 10px; }
   .activity-tile { border-radius: 16px; }
   .activity-tile__body { padding: 8px 8px 10px; }
-  .activity-tile__title { font-size: 12px; }
+  .activity-tile__title { font-size: 12px; -webkit-line-clamp: 3; min-height: 4.2em; }
+  .activity-tile--more .activity-tile__title { min-height: 0; }
   .activity-tile__count { top: 6px; right: 6px; font-size: 10px; padding: 1px 7px; }
   .activity-tile__plus { font-size: 34px; }
   .activity-cards--strip { display: flex; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 10px; -webkit-overflow-scrolling: touch; }
