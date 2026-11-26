@@ -1,5 +1,9 @@
 /* ترجمات الموقع: المفتاح هو النص العربي الأصلي، والقيمة [فرنسي، إنجليزي] */
 window.I18N_DICT = {
+"اكتشفوا مؤسسة النضج": ["Découvrez Institution Annodje","Discover Institution Annodje"],
+"فيديو تعريفي": ["Vidéo de présentation","Introduction video"],
+"سبورات رقمية تفاعلية، وأساتذة ومربّيات متميّزون، وبيئة آمنة ومحفّزة.": ["Tableaux numériques interactifs, enseignants et éducatrices d'exception, dans un environnement sûr et stimulant. (Narration en arabe)","Interactive digital boards, outstanding teachers and educators, in a safe and stimulating environment. (Arabic narration)"],
+"فيديو تعريفي بمؤسسة النضج": ["Vidéo de présentation d'Institution Annodje","Institution Annodje introduction video"],
 "التسجيل مفتوح للموسم الدراسي الجديد <strong>— المقاعد محدودة</strong>": [
 "Les inscriptions sont ouvertes pour la nouvelle année scolaire <strong>— places limitées</strong>",
 "Registration is open for the new school year <strong>— limited seats</strong>"
