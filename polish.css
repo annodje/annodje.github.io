@@ -1,0 +1,72 @@
+/* polish.css - visual refinement layer. To revert: remove the <link> to polish.css from the pages. */
+:root { --shadow-soft: 0 10px 30px rgba(22,50,79,.08); --shadow-lift: 0 18px 44px rgba(22,50,79,.16); --ease: cubic-bezier(.2,.7,.2,1); }
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+::selection { background: var(--orange-soft); color: var(--navy); }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 6px; }
+
+/* Typography: Arabic must not use negative tracking (it breaks letter joins) */
+html[lang^="ar"] h1, html[lang^="ar"] h2, html[lang^="ar"] h3, html[lang^="ar"] h4,
+html[lang^="ar"] .hero h1, html[lang^="ar"] .stats-grid strong { letter-spacing: 0 !important; }
+html:not([lang^="ar"]) h1, html:not([lang^="ar"]) h2, html:not([lang^="ar"]) .hero h1 { letter-spacing: -.025em !important; }
+html[lang^="ar"] .hero h1 { line-height: 1.2; }
+.hero__lead, .about__copy > p:not(.overline), .section-heading > p, .campus__copy > p:not(.overline) { font-size: 16px !important; line-height: 2; color: #56636a; }
+.overline { letter-spacing: .06em; font-weight: 700; }
+html[lang^="ar"] .overline { letter-spacing: 0; text-transform: none; }
+
+/* Header */
+.site-header { position: sticky !important; top: 0; background: rgba(251,247,242,.92); box-shadow: 0 1px 0 rgba(22,50,79,.06), 0 8px 24px rgba(22,50,79,.04); }
+.main-nav a { font-size: 14px; font-weight: 500; }
+.nav-cta, .button { border-radius: 12px; box-shadow: 0 6px 16px rgba(233,139,95,.28); font-weight: 600; }
+.nav-cta { font-size: 14px; padding: 11px 20px; }
+.button, .nav-cta, .value-card, .program-card, .testimonial, .activity-tile { transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .2s; }
+.button:hover, .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(233,139,95,.34); }
+.announcement { font-size: 13px; }
+.language-switcher, #language-switcher { border-radius: 10px; font-size: 13px; }
+
+/* Cards */
+.value-card, .program-card, .testimonial, .core-value { box-shadow: var(--shadow-soft); border-radius: 20px; }
+.value-card:hover, .program-card:hover, .core-value:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+.hero-image-wrap img, .campus__frame img { box-shadow: 0 24px 60px rgba(22,50,79,.18); }
+.floating-card { border-radius: 14px; box-shadow: var(--shadow-lift); }
+.floating-card small, .floating-card span { font-size: 12px; }
+
+/* Section rhythm */
+.section-space { padding: 104px 0; }
+.section-heading { margin-bottom: 44px; }
+.section-heading h2, .about h2, .method h2, .contact h2, .voices h2 { margin-bottom: 18px; }
+.stats-grid span { font-size: 13px; color: rgba(255,255,255,.72); }
+.stats-grid strong { font-size: 48px; }
+
+/* Activity capsules */
+.activity-tile { box-shadow: var(--shadow-soft); }
+.activity-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+
+/* Footer */
+.site-footer { padding: 72px 0 28px; }
+.footer-brand p { font-size: 14px; color: rgba(255,255,255,.66); }
+.footer-links, .footer-social { font-size: 14px; gap: 10px; }
+.footer-links > span:first-child, .footer-social > span { font-size: 14px; }
+.footer-links a, .footer-links span:last-child { color: rgba(255,255,255,.68); }
+.footer-bottom { font-size: 12px; color: rgba(255,255,255,.5); }
+.footer-social a { width: 36px; height: 36px; font-size: 12px; }
+
+/* Forms */
+input, textarea, select { border-radius: 10px; }
+input:focus, textarea:focus, select:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(233,139,95,.2); outline: none; }
+
+@media (max-width: 700px) {
+  .section-space { padding: 68px 0; }
+  .hero__lead, .about__copy > p:not(.overline), .section-heading > p, .campus__copy > p:not(.overline) { font-size: 15px !important; }
+  .value-card p { font-size: 13px; line-height: 1.8; }
+  .value-card h3 { font-size: 18px; }
+  .activity-card p, .life-ribbon, .signal-strip__inner { font-size: 13px; }
+  .hero__content { padding: 52px 0 28px; }
+  .hero h1 { font-size: clamp(44px, 13.5vw, 64px); }
+  .stats-grid strong { font-size: 38px; }
+  .footer-links, .footer-social, .footer-brand p { font-size: 14px; }
+  .footer-bottom { font-size: 12px; }
+  .site-footer { padding: 54px 0 24px; }
+  .button { width: auto; }
+  .announcement { font-size: 12.5px; }
+}
+@media (prefers-reduced-motion: reduce) { .value-card:hover, .program-card:hover, .activity-tile:hover, .button:hover { transform: none; } }
