@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css?v=5" />
+    <link rel="stylesheet" href="/styles.css?v=6" />
   </head>
   <body>
     <div id="splash" aria-hidden="true"><div class="splash__inner"><div class="splash__badge"><img class="splash__logo" src="/1-logo.jpg?v=1" alt="" /><span class="splash__mark">ن</span></div><p class="splash__name">مؤسسة النضج</p><p class="splash__sub">للتربية والتعليم الخصوصي</p><div class="splash__bar"></div></div></div>
@@ -249,7 +249,7 @@
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="معرض صور الأنشطة" hidden>
       <button class="lightbox__close" type="button" aria-label="إغلاق">×</button>
       <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="الصورة التالية">‹</button>
-      <figure><strong id="lightbox-title" class="lightbox__title" dir="auto"></strong><img id="lightbox-img" alt="" /><figcaption id="lightbox-cap"></figcaption></figure>
+      <figure><strong id="lightbox-title" class="lightbox__title" dir="auto"></strong><img id="lightbox-img" alt="" /><video id="lightbox-video" controls playsinline preload="metadata" hidden></video><figcaption id="lightbox-cap"></figcaption></figure>
       <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="الصورة السابقة">›</button>
     </div>
     <script>
@@ -463,6 +463,31 @@
       "alt": "تلاميذ أمام علم من بصمات الأيدي وأمام لوحة جمل ونخلة"
     }
   ]
+},
+        {
+  "title": "الكورال",
+  "description": "تلاميذ المؤسسة يغنون معا في الكورال، أناشيد وطنية بأصوات الأطفال.",
+  "cover": "/4-choir-poster-1.jpg",
+  "photos": [
+    {
+      "src": "/4-choir-poster-1.jpg",
+      "poster": "/4-choir-poster-1.jpg",
+      "video": "/1-choir-1.mp4",
+      "alt": "أغنية «يا بلادي عيشي» بصوت كورال تلاميذ مؤسسة النضج بمناسبة عيد الاستقلال"
+    },
+    {
+      "src": "/5-choir-poster-2.jpg",
+      "poster": "/5-choir-poster-2.jpg",
+      "video": "/2-choir-2.mp4",
+      "alt": "كورال التلاميذ يؤدي أغنية (فيديو 2)"
+    },
+    {
+      "src": "/6-choir-poster-3.jpg",
+      "poster": "/6-choir-poster-3.jpg",
+      "video": "/3-choir-3.mp4",
+      "alt": "كورال التلاميذ يؤدي أغنية (فيديو 3)"
+    }
+  ]
 }
       ];
     </script>
@@ -470,21 +495,21 @@
       (function () {
         var list = document.getElementById("activity-cards"), box = document.getElementById("lightbox");
         if (!list || !box || typeof ACTIVITIES === "undefined") return;
-        var img = document.getElementById("lightbox-img"), cap = document.getElementById("lightbox-cap"), ttl = document.getElementById("lightbox-title");
+        var vid = document.getElementById("lightbox-video"), img = document.getElementById("lightbox-img"), cap = document.getElementById("lightbox-cap"), ttl = document.getElementById("lightbox-title");
         var act = null, cur = 0, last = null;
         function el(tag, cls, txt) { var n = document.createElement(tag); if (cls) n.className = cls; if (txt) n.textContent = txt; return n; }
         ACTIVITIES.forEach(function (a) {
           var card = el("button", "activity-tile"); card.type = "button";
           var fig = el("span", "activity-tile__img"); var im = document.createElement("img");
           im.src = a.cover || a.photos[0].src; im.alt = ""; im.width = 1080; im.height = 1080; im.loading = "lazy"; im.decoding = "async"; fig.appendChild(im);
-          fig.appendChild(el("span", "activity-tile__count", a.photos.length + " صورة"));
+          var nv = a.photos.filter(function (p) { return p.video; }).length; fig.appendChild(el("span", "activity-tile__count", nv === a.photos.length ? a.photos.length + " فيديو" : a.photos.length + " صورة"));
           var body = el("span", "activity-tile__body"); var t = el("strong", "activity-tile__title", a.title); t.setAttribute("dir", "auto");
           body.appendChild(t); if (a.description) body.appendChild(el("span", "activity-tile__desc", a.description)); body.appendChild(el("span", "activity-tile__cta", "عرض الصور ←"));
           card.appendChild(fig); card.appendChild(body); card.addEventListener("click", function () { open(a, 0); }); list.appendChild(card);
         });
-        function show(i) { cur = (i + act.photos.length) % act.photos.length; var p = act.photos[cur]; img.src = p.src; img.alt = p.alt || ""; cap.textContent = (p.alt || "") + " (" + (cur + 1) + "/" + act.photos.length + ")"; }
+        function show(i) { cur = (i + act.photos.length) % act.photos.length; var p = act.photos[cur]; vid.pause(); if (p.video) { img.hidden = true; img.removeAttribute("src"); vid.hidden = false; vid.poster = p.poster || ""; vid.src = p.video; vid.load(); } else { vid.hidden = true; vid.removeAttribute("src"); vid.load(); img.hidden = false; img.src = p.src; } img.alt = p.alt || ""; cap.textContent = (p.alt || "") + " (" + (cur + 1) + "/" + act.photos.length + ")"; }
         function open(a, i) { act = a; last = document.activeElement; ttl.textContent = a.title; show(i); box.hidden = false; document.body.style.overflow = "hidden"; box.querySelector(".lightbox__close").focus(); }
-        function close() { box.hidden = true; img.removeAttribute("src"); document.body.style.overflow = ""; if (last) last.focus(); }
+        function close() { box.hidden = true; vid.pause(); vid.removeAttribute("src"); vid.load(); img.removeAttribute("src"); document.body.style.overflow = ""; if (last) last.focus(); }
         box.querySelector(".lightbox__close").addEventListener("click", close);
         box.querySelector(".lightbox__nav--next").addEventListener("click", function () { show(cur + 1); });
         box.querySelector(".lightbox__nav--prev").addEventListener("click", function () { show(cur - 1); });
