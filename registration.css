@@ -1,0 +1,4 @@
+.rg-note{margin:6px 0 4px;padding:14px 16px;border-radius:12px;background:#fff4ec;border:1px solid #e98b5f;color:#16324f;font-weight:600;line-height:1.8;font-size:15px}
+.rg-note[hidden]{display:none}
+#rg-school-wrap[hidden]{display:none}
+.lang-ltr .reg-page .contact-form label{text-align:left}
