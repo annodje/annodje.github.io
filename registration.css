@@ -2,3 +2,5 @@
 .rg-note[hidden]{display:none}
 #rg-school-wrap[hidden]{display:none}
 .lang-ltr .reg-page .contact-form label{text-align:left}
+.reg-page .contact-form label.rg-check{display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:600}
+.reg-page .contact-form label.rg-check input{width:22px;height:22px;flex:0 0 22px;margin:0;accent-color:#e98b5f}
