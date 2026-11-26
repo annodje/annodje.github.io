@@ -12,8 +12,8 @@
     var t = T[lang()] || T.ar;
     var a = box.querySelectorAll("a");
     a[0].textContent = t.n; a[1].textContent = t.r;
-    a[0].href = "https://wa.me/" + NUM + "?text=" + encodeURIComponent(t.tn);
-    a[1].href = "https://wa.me/" + NUM + "?text=" + encodeURIComponent(t.tr);
+    a[0].href = "/registration.html";
+    a[1].href = "/registration.html?type=re";
   }
   render();
   window.addEventListener("langchange", render);
