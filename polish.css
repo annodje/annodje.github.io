@@ -114,3 +114,6 @@ html[lang^="ar"] .eyebrow, html[lang^="ar"] .eyebrow * { letter-spacing: 0 !impo
 .eyebrow { position: relative; z-index: 2; flex-wrap: nowrap; font-size: 13px; line-height: 1.6; margin-bottom: 24px; }
 .eyebrow-line { flex: 0 0 25px; }
 .hero__content { overflow: visible; }
+
+.footer-social a svg { display: block; }
+.footer-social a[aria-label="Facebook"]:hover { background: #1877f2; border-color: #1877f2; }
