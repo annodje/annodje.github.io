@@ -126,3 +126,45 @@ html[lang^="ar"] .eyebrow, html[lang^="ar"] .eyebrow * { letter-spacing: 0 !impo
 .promo-video__frame video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0f2a3d}
 
 .promo-video__frame video{object-fit:contain}
+
+/* mobile spacing tightening */
+@media (max-width: 700px) {
+  .section-space { padding: 52px 0 !important; }
+  .hero__content { padding: 34px 0 20px !important; }
+  .hero h1 { font-size: clamp(40px, 12.5vw, 60px); }
+  .hero__proof { margin-top: 22px !important; }
+  .hero__visual { padding: 12px 22px 44px !important; }
+  .hero-video { margin-top: 0 !important; }
+  .section-kicker { margin-bottom: 18px !important; }
+  .about__copy h2, .method h2, .contact h2 { font-size: 36px; }
+  .values-grid { margin-top: 28px !important; }
+  .value-card--dark { min-height: 240px !important; }
+  .value-card { min-height: 120px !important; }
+  .section-heading { margin-bottom: 20px !important; }
+  .program-card { min-height: 260px !important; }
+  .program-card { padding: 22px 22px 20px !important; }
+  .program-icon { margin: 18px 0 14px !important; }
+  .program-meta { margin-top: 18px !important; }
+  .program-card > a { bottom: 16px; }
+  .method__intro .section-kicker { margin-bottom: 20px !important; }
+  .steps { padding-top: 30px; }
+  .stats-grid { min-height: 150px !important; padding: 22px 0 !important; row-gap: 16px !important; }
+  .testimonial, .testimonial--large { min-height: 200px !important; }
+  .goals-values__heading .section-kicker { margin-bottom: 18px !important; }
+  .goals-values__body { margin-top: 28px !important; }
+  .core-values { margin-top: 28px !important; }
+  .core-value { min-height: 120px !important; }
+  .life-feature { min-height: 320px !important; }
+  .life-feature__label { margin-top: 24px !important; }
+  .activity-card { min-height: 190px !important; }
+  .activity-card__icon { margin-bottom: 18px !important; }
+  .campus__layout { gap: 28px !important; }
+  .contact__intro { padding-bottom: 22px; }
+  .contact-panel { padding: 34px 20px 20px !important; }
+  .footer-grid { gap: 26px 18px !important; }
+  .contact-hero__inner { min-height: 280px !important; }
+  .contact-hero__copy { padding: 36px 0 14px !important; }
+  .contact-main__layout { gap: 30px !important; }
+  .map-frame { height: 240px !important; }
+  .sitemap-box { padding: 26px 20px !important; }
+}
