@@ -209,3 +209,8 @@ html[lang^="ar"] .eyebrow, html[lang^="ar"] .eyebrow * { letter-spacing: 0 !impo
   .core-value h3 { font-size: 17px !important; }
   .core-value p { font-size: 12px !important; line-height: 1.7; }
 }
+
+/* values cards: keep the icon clear of the title */
+@media (max-width: 700px) { .value-card { padding-top: 62px !important; } .value-card--dark { padding-top: 22px !important; } }
+/* campus block: text only after the photo was removed */
+.campus__layout { display: block !important; max-width: 760px; margin-inline: auto; }
