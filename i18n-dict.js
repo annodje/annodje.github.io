@@ -1141,5 +1141,11 @@ window.I18N_DICT = {
 "لا يتم حفظ رقم البطاقة الوطنية ولا إرساله إلى أي خادم. يبقى في هذه الصفحة فقط، ويصل إلى المؤسسة عبر رسالة واتساب التي ترسلها بنفسك.": ["Le numéro de la carte nationale n'est ni enregistré ni envoyé à un serveur. Il reste uniquement sur cette page et n'arrive à l'établissement que par le message WhatsApp que vous envoyez vous-même.", "The national ID number is not saved or sent to any server. It stays on this page only and reaches the school only through the WhatsApp message you send yourself."],
 "ESP 2، Bd Bouakkaz، مراكش، المملكة المغربية": ["ESP 2, Bd Bouakkaz, Marrakech, Maroc", "ESP 2, Bd Bouakkaz, Marrakech, Morocco"],
 "خريطة مؤسسة النضج": ["Plan de l'Institution Annodje", "Map of Institution Annodje"],
-"إرسال الطلب عبر واتساب <span aria-hidden=\"true\">←</span>": ["Envoyer la demande par WhatsApp <span aria-hidden=\"true\">←</span>", "Send the request on WhatsApp <span aria-hidden=\"true\">←</span>"]
+"إرسال الطلب عبر واتساب <span aria-hidden=\"true\">←</span>": ["Envoyer la demande par WhatsApp <span aria-hidden=\"true\">←</span>", "Send the request on WhatsApp <span aria-hidden=\"true\">←</span>"],
+"القسم أو الفصل": ["Classe / section", "Class / section"],
+"اكتب القسم أو الفصل": ["Indiquez la classe ou la section", "Enter the class or section"],
+"إرسال الطلب بالبريد الإلكتروني <span aria-hidden=\"true\">←</span>": ["Envoyer la demande par e-mail <span aria-hidden=\"true\">←</span>", "Send the request by email <span aria-hidden=\"true\">←</span>"],
+"أو عبر واتساب (تنزيل PDF)": ["Ou via WhatsApp (télécharger le PDF)", "Or via WhatsApp (download the PDF)"],
+"زر واتساب ينزّل ملف PDF ثم يفتح المحادثة: أرفق الملف بنفسك قبل الإرسال، لأن واتساب لا يسمح بإرفاق الملفات تلقائيًا.": ["Le bouton WhatsApp télécharge le PDF puis ouvre la discussion : joignez le fichier vous-même avant d'envoyer, car WhatsApp ne permet pas de joindre des fichiers automatiquement.", "The WhatsApp button downloads the PDF and opens the chat: attach the file yourself before sending, because WhatsApp does not allow files to be attached automatically."],
+"يُرسل الطلب، بما فيه رقم البطاقة الوطنية، بالبريد الإلكتروني إلى المؤسسة عبر خدمة FormSubmit.co. هذا الموقع لا يحفظ أي بيانات.": ["La demande, y compris le numéro de la carte nationale, est envoyée par e-mail à l'établissement via le service FormSubmit.co. Ce site ne conserve aucune donnée.", "The request, including the national ID number, is emailed to the school through the FormSubmit.co service. This site does not store any data."]
 };
