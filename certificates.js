@@ -1,9 +1,9 @@
 /* Certificate request: builds an A4 PDF in the browser and emails it through FormSubmit.co. Nothing is stored by this site. */
 (function () {
   var T = {
-    ar: { dir: "rtl", school: "مؤسسة النضج للتربية والتعليم الخصوصي", city: "مراكش", title: { leaving: "طلب شهادة المغادرة", school: "طلب شهادة مدرسية" }, intro: "طلب شهادة من موقع مؤسسة النضج. أرفقت ملف PDF بهذه الرسالة.", pdfn: "طلب-شهادة", rows: ["نوع الشهادة", "اسم ولي الأمر", "رقم البطاقة الوطنية (CIN)", "اسم التلميذ(ة)", "المستوى الدراسي", "القسم أو الفصل", "سبب الطلب"], types: { leaving: "شهادة المغادرة", school: "شهادة مدرسية" }, recv: "تاريخ الاستلام: ....... / ....... / .............", sign: "توقيع ولي الأمر", ok: "تم تنزيل ملف PDF. أرفقه في محادثة واتساب ثم أرسل.", pr: "جارٍ فتح نافذة الطباعة…", sending: "جارٍ إرسال الطلب…", sent: "تم إرسال طلبك إلى المؤسسة بالبريد الإلكتروني ✓", fail: "تعذر إرسال الطلب. جرّب من جديد أو استعمل واتساب." },
-    fr: { dir: "ltr", school: "Institution Annodje pour l'éducation et l'enseignement privé", city: "Marrakech", title: { leaving: "Demande de certificat de départ", school: "Demande de certificat de scolarité" }, intro: "Demande de certificat depuis le site de l'Institution Annodje. Je joins le PDF à ce message.", pdfn: "demande-certificat", rows: ["Type de certificat", "Nom du tuteur", "N° de la carte nationale (CIN)", "Nom de l'élève", "Niveau scolaire", "Classe / section", "Motif de la demande"], types: { leaving: "Certificat de départ", school: "Certificat de scolarité" }, recv: "Reçu le : ....... / ....... / .............", sign: "Signature du tuteur", ok: "PDF téléchargé. Joignez-le dans la discussion WhatsApp puis envoyez.", pr: "Ouverture de la fenêtre d'impression…", sending: "Envoi en cours…", sent: "Votre demande a été envoyée à l'établissement par e-mail ✓", fail: "L'envoi a échoué. Réessayez ou utilisez WhatsApp." },
-    en: { dir: "ltr", school: "Institution Annodje for private education and teaching", city: "Marrakech", title: { leaving: "Leaving certificate request", school: "School certificate request" }, intro: "Certificate request from the Institution Annodje website. I am attaching the PDF to this message.", pdfn: "certificate-request", rows: ["Type of certificate", "Guardian's name", "National ID number (CIN)", "Student's name", "School level", "Class / section", "Reason for the request"], types: { leaving: "Leaving certificate", school: "School certificate" }, recv: "Received on: ....... / ....... / .............", sign: "Guardian's signature", ok: "PDF downloaded. Attach it in the WhatsApp chat, then send.", pr: "Opening the print window…", sending: "Sending…", sent: "Your request was emailed to the school ✓", fail: "Sending failed. Try again or use WhatsApp." }
+    ar: { dir: "rtl", school: "مؤسسة النضج للتربية والتعليم الخصوصي", city: "مراكش", title: { leaving: "طلب شهادة المغادرة", school: "طلب شهادة مدرسية" }, intro: "طلب شهادة من موقع مؤسسة النضج. أرفقت ملف PDF بهذه الرسالة.", pdfn: { leaving: "طلب-شهادة-المغادرة", school: "طلب-شهادة-مدرسية" }, rows: ["نوع الشهادة", "اسم ولي الأمر", "رقم البطاقة الوطنية (CIN)", "اسم التلميذ(ة)", "المستوى الدراسي", "القسم أو الفصل", "سبب الطلب"], types: { leaving: "شهادة المغادرة", school: "شهادة مدرسية" }, recv: "تاريخ الاستلام: ....... / ....... / .............", sign: "توقيع ولي الأمر", stamp: "ختم المؤسسة", sec1: "معلومات ولي الأمر", sec2: "معلومات التلميذ(ة)", sec3: "تفاصيل الطلب", foot: "annodje.ml@gmail.com  ·  annodje.github.io", ok: "تم تنزيل ملف PDF. أرفقه في محادثة واتساب ثم أرسل.", pr: "جارٍ فتح نافذة الطباعة…", sending: "جارٍ إرسال الطلب…", sent: "تم إرسال طلبك إلى المؤسسة بالبريد الإلكتروني ✓", fail: "تعذر إرسال الطلب. جرّب من جديد أو استعمل واتساب." },
+    fr: { dir: "ltr", school: "Institution Annodje pour l'éducation et l'enseignement privé", city: "Marrakech", title: { leaving: "Demande de certificat de départ", school: "Demande de certificat de scolarité" }, intro: "Demande de certificat depuis le site de l'Institution Annodje. Je joins le PDF à ce message.", pdfn: { leaving: "demande-certificat-de-depart", school: "demande-certificat-de-scolarite" }, rows: ["Type de certificat", "Nom du tuteur", "N° de la carte nationale (CIN)", "Nom de l'élève", "Niveau scolaire", "Classe / section", "Motif de la demande"], types: { leaving: "Certificat de départ", school: "Certificat de scolarité" }, recv: "Reçu le : ....... / ....... / .............", sign: "Signature du tuteur", stamp: "Cachet de l'établissement", sec1: "Informations du tuteur", sec2: "Informations de l'élève", sec3: "Détails de la demande", foot: "annodje.ml@gmail.com  ·  annodje.github.io", ok: "PDF téléchargé. Joignez-le dans la discussion WhatsApp puis envoyez.", pr: "Ouverture de la fenêtre d'impression…", sending: "Envoi en cours…", sent: "Votre demande a été envoyée à l'établissement par e-mail ✓", fail: "L'envoi a échoué. Réessayez ou utilisez WhatsApp." },
+    en: { dir: "ltr", school: "Institution Annodje for private education and teaching", city: "Marrakech", title: { leaving: "Leaving certificate request", school: "School certificate request" }, intro: "Certificate request from the Institution Annodje website. I am attaching the PDF to this message.", pdfn: { leaving: "leaving-certificate-request", school: "school-certificate-request" }, rows: ["Type of certificate", "Guardian's name", "National ID number (CIN)", "Student's name", "School level", "Class / section", "Reason for the request"], types: { leaving: "Leaving certificate", school: "School certificate" }, recv: "Received on: ....... / ....... / .............", sign: "Guardian's signature", stamp: "School stamp", sec1: "Guardian information", sec2: "Student information", sec3: "Request details", foot: "annodje.ml@gmail.com  ·  annodje.github.io", ok: "PDF downloaded. Attach it in the WhatsApp chat, then send.", pr: "Opening the print window…", sending: "Sending…", sent: "Your request was emailed to the school ✓", fail: "Sending failed. Try again or use WhatsApp." }
   };
   var f = document.getElementById("cert-form");
   if (!f) return;
@@ -26,47 +26,81 @@
     return lines.length ? lines : [""];
   }
   function drawSheet(t, d, type) {
-    var W = 1240, H = 1754, M = 100, rtl = t.dir === "rtl";
+    var W = 1240, H = 1754, M = 108, rtl = t.dir === "rtl", INK = "#111", GR = "#555", LG = "#f1f1f1", LN = "#9a9a9a";
     var cv = document.createElement("canvas"); cv.width = W; cv.height = H;
     var c = cv.getContext("2d");
     c.fillStyle = "#fff"; c.fillRect(0, 0, W, H);
     c.direction = t.dir; c.textBaseline = "middle";
     var xs = rtl ? W - M : M, al = rtl ? "right" : "left";
     function tx(str, x, y, size, weight, color, align) { c.font = weight + " " + size + "px " + FONT; c.fillStyle = color; c.textAlign = align || al; c.fillText(str, x, y); }
-    var ly = 160;
+    function rr(x, y, w, h, r) { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
+    function diamond(x, y, r, fill) { c.beginPath(); c.moveTo(x, y - r); c.lineTo(x + r, y); c.lineTo(x, y + r); c.lineTo(x - r, y); c.closePath(); if (fill) { c.fillStyle = INK; c.fill(); } else { c.strokeStyle = INK; c.lineWidth = 2; c.stroke(); } }
+    /* double frame + corner diamonds */
+    c.strokeStyle = INK; c.lineWidth = 7; c.strokeRect(34, 34, W - 68, H - 68);
+    c.lineWidth = 2; c.strokeRect(54, 54, W - 108, H - 108);
+    [[54, 54], [W - 54, 54], [54, H - 54], [W - 54, H - 54]].forEach(function (p) { c.fillStyle = "#fff"; c.fillRect(p[0] - 14, p[1] - 14, 28, 28); diamond(p[0], p[1], 13, true); });
+    /* geometric band */
+    var bandY = 96, n = 0;
+    for (var bx = M; bx <= W - M; bx += 40, n++) { diamond(bx, bandY, 14, n % 2 === 0); if (n % 2 === 1) diamond(bx, bandY, 6, true); }
+    c.fillStyle = INK; c.fillRect(M, bandY + 26, W - 2 * M, 3);
+    /* header: logo (grayscale) + names */
+    var ly = 218, lr = 72, lcx = rtl ? W - M - lr - 6 : M + lr + 6;
+    c.beginPath(); c.arc(lcx, ly, lr + 8, 0, Math.PI * 2); c.lineWidth = 4; c.strokeStyle = INK; c.stroke();
     if (logo.complete && logo.naturalWidth) {
-      var lx = rtl ? W - M - 140 : M;
-      c.save(); c.beginPath(); c.arc(lx + 70, ly, 70, 0, Math.PI * 2); c.clip(); c.drawImage(logo, lx, ly - 70, 140, 140); c.restore();
+      var lc = document.createElement("canvas"); lc.width = lc.height = lr * 2; var lx = lc.getContext("2d");
+      lx.drawImage(logo, 0, 0, lr * 2, lr * 2);
+      try { var im = lx.getImageData(0, 0, lr * 2, lr * 2), px = im.data; for (var q = 0; q < px.length; q += 4) { var g = 0.3 * px[q] + 0.59 * px[q + 1] + 0.11 * px[q + 2]; px[q] = px[q + 1] = px[q + 2] = g; } lx.putImageData(im, 0, 0); } catch (e1) {}
+      c.save(); c.beginPath(); c.arc(lcx, ly, lr, 0, Math.PI * 2); c.clip(); c.drawImage(lc, lcx - lr, ly - lr); c.restore();
     }
-    var tx0 = rtl ? W - M - 140 - 30 : M + 140 + 30;
-    c.font = "700 34px " + FONT;
-    var hl = wrap(c, t.school, W - 2 * M - 170), hy = ly - (hl.length * 44 + 40) / 2 + 22;
-    for (var h = 0; h < hl.length; h++) tx(hl[h], tx0, hy + h * 44, 34, 700, "#16324f");
-    tx(t.city, tx0, hy + hl.length * 44 + 10, 30, 400, "#444");
-    c.fillStyle = "#16324f"; c.fillRect(M, 270, W - 2 * M, 4);
-    tx(t.title[type], W / 2, 380, 58, 700, "#16324f", "center");
-    var y = 470, labW = Math.round((W - 2 * M) * 0.36), valW = W - 2 * M - labW, pad = 22, lh = 46;
-    c.strokeStyle = "#666"; c.lineWidth = 2;
-    for (var i = 0; i < t.rows.length; i++) {
-      c.font = "400 34px " + FONT;
-      var lines = wrap(c, d[i], valW - 2 * pad);
-      c.font = "700 32px " + FONT;
-      var ll = wrap(c, t.rows[i], labW - 2 * pad);
-      var rh = Math.max(96, lines.length * lh + 2 * pad, ll.length * lh + 2 * pad);
-      if (i === t.rows.length - 1) rh = Math.max(rh, 220);
-      var labX = rtl ? W - M - labW : M, valX = rtl ? M : M + labW;
-      c.fillStyle = "#eeeeee"; c.fillRect(labX, y, labW, rh);
-      c.strokeRect(labX, y, labW, rh); c.strokeRect(valX, y, valW, rh);
-      for (var q = 0; q < ll.length; q++) tx(ll[q], rtl ? labX + labW - pad : labX + pad, y + rh / 2 + (q - (ll.length - 1) / 2) * lh, 32, 700, "#111");
-      for (var j = 0; j < lines.length; j++) tx(lines[j], rtl ? valX + valW - pad : valX + pad, y + pad + lh / 2 + j * lh + (rh - 2 * pad - lines.length * lh) / 2 * (i === t.rows.length - 1 ? 0 : 1), 34, 400, "#111");
-      y += rh;
+    var tx0 = rtl ? lcx - lr - 40 : lcx + lr + 40, tw = W - 2 * M - 2 * lr - 60;
+    c.font = "700 36px " + FONT;
+    var hl = wrap(c, t.school, tw), hy = ly - (hl.length * 46 + 40) / 2 + 23;
+    for (var h = 0; h < hl.length; h++) tx(hl[h], tx0, hy + h * 46, 36, 700, INK);
+    tx(t.city, tx0, hy + hl.length * 46 + 8, 30, 400, GR);
+    c.fillStyle = INK; c.fillRect(M, 322, W - 2 * M, 3); c.fillRect(M, 331, W - 2 * M, 1);
+    /* title */
+    tx(t.title[type], W / 2, 400, 58, 700, INK, "center");
+    c.fillStyle = INK; c.fillRect(W / 2 - 230, 456, 190, 2); c.fillRect(W / 2 + 40, 456, 190, 2); diamond(W / 2, 457, 11, true);
+    /* sections and fields */
+    var y = 500, IW = W - 2 * M, pad = 24;
+    function section(title) {
+      var sx = rtl ? W - M - 14 : M + 14;
+      diamond(sx, y + 20, 11, true);
+      tx(title, rtl ? sx - 26 : sx + 26, y + 20, 32, 700, INK);
+      c.fillStyle = LN; c.fillRect(M, y + 50, IW, 2);
+      y += 66;
     }
-    y += 70;
-    tx(t.recv, xs, y, 34, 400, "#111");
-    y += 110;
-    var bw = 520, bx = rtl ? M : W - M - bw;
-    tx(t.sign, bx + bw / 2, y, 32, 700, "#111", "center");
-    c.strokeRect(bx, y + 40, bw, 200);
+    function field(label, value, x, w, minH, fs) {
+      fs = fs || 34;
+      c.font = "400 " + fs + "px " + FONT;
+      var lines = wrap(c, value, w - 2 * pad), lh = Math.round(fs * 1.3);
+      var bh = Math.max(minH || 72, lines.length * lh + 28);
+      tx(label, rtl ? x + w : x, y + 14, 24, 700, GR);
+      rr(x, y + 34, w, bh, 10); c.fillStyle = LG; c.fill(); c.strokeStyle = LN; c.lineWidth = 2; c.stroke();
+      for (var i = 0; i < lines.length; i++) tx(lines[i], rtl ? x + w - pad : x + pad, y + 34 + 14 + lh / 2 + i * lh, fs, 400, INK);
+      return bh + 34 + 18;
+    }
+    section(t.sec1);
+    y += field(t.rows[1], d[1], M, IW);
+    y += field(t.rows[2], d[2], M, IW);
+    section(t.sec2);
+    y += field(t.rows[3], d[3], M, IW);
+    var half = (IW - 24) / 2, xa = rtl ? M + half + 24 : M, xb = rtl ? M : M + half + 24;
+    var h1 = field(t.rows[4], d[4], xa, half), h2 = field(t.rows[5], d[5], xb, half);
+    y += Math.max(h1, h2);
+    section(t.sec3);
+    y += field(t.rows[0], d[0], M, IW);
+    y += field(t.rows[6], d[6], M, IW, 150, d[6].length > 220 ? 28 : 32);
+    /* footer: received line, signature box, stamp box */
+    var fy = Math.max(y + 24, 1440);
+    tx(t.recv, xs, fy, 32, 400, INK);
+    var by = fy + 44, bh = Math.min(170, 1660 - by), bw = 500;
+    var sx = rtl ? W - M - bw : M, tx2 = rtl ? M : W - M - bw;
+    tx(t.sign, sx + bw / 2, by + 6, 28, 700, INK, "center");
+    c.strokeStyle = INK; c.lineWidth = 2.5; rr(sx, by + 30, bw, bh - 30, 8); c.stroke();
+    tx(t.stamp, tx2 + bw / 2, by + 6, 28, 700, INK, "center");
+    c.setLineDash([10, 8]); c.strokeStyle = GR; rr(tx2, by + 30, bw, bh - 30, 8); c.stroke(); c.setLineDash([]);
+    tx(t.foot, W / 2, 1688, 24, 400, GR, "center");
     return cv;
   }
   function makePdf(cv) {
@@ -100,7 +134,7 @@
     fd.append("_template", "table");
     fd.append("_captcha", "false");
     for (var i = 0; i < d.length; i++) fd.append(t.rows[i], d[i]);
-    fd.append("attachment", blob, t.pdfn + ".pdf");
+    fd.append("attachment", blob, t.pdfn[type] + ".pdf");
     btn.disabled = true; status(t.sending);
     /* Native multipart POST (the documented way to send files). The reply is opaque (no-cors), so success means the request was sent. */
     fetch(ENDPOINT, { method: "POST", body: fd, mode: "no-cors" })
