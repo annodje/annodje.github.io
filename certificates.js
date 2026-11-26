@@ -89,7 +89,7 @@
     return new Blob(parts, { type: "application/pdf" });
   }
   function status(msg) { var s = document.getElementById("cert-status"); if (s) s.textContent = msg; }
-  var ENDPOINT = "https://formsubmit.co/ajax/annodje.ml@gmail.com";
+  var ENDPOINT = "https://formsubmit.co/annodje.ml@gmail.com";
   f.addEventListener("submit", function (e) {
     e.preventDefault();
     var t = T[lang()], type = f.elements.type.value, d = data(t), btn = f.querySelector('button[type="submit"]');
@@ -102,9 +102,9 @@
     for (var i = 0; i < d.length; i++) fd.append(t.rows[i], d[i]);
     fd.append("attachment", blob, t.pdfn + ".pdf");
     btn.disabled = true; status(t.sending);
-    fetch(ENDPOINT, { method: "POST", body: fd, headers: { Accept: "application/json" } })
-      .then(function (res) { return res.json().catch(function () { return {}; }).then(function (j) { return { ok: res.ok, j: j }; }); })
-      .then(function (r) { if (r.ok && String(r.j.success) === "true") { status(t.sent); f.reset(); } else { status(t.fail); } })
+    /* Native multipart POST (the documented way to send files). The reply is opaque (no-cors), so success means the request was sent. */
+    fetch(ENDPOINT, { method: "POST", body: fd, mode: "no-cors" })
+      .then(function () { status(t.sent); f.reset(); })
       .catch(function () { status(t.fail); })
       .then(function () { btn.disabled = false; });
   });
