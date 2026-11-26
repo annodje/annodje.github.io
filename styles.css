@@ -151,3 +151,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
 }
 @media (prefers-reduced-motion: reduce) { #splash { animation-duration: .01ms !important; animation-delay: 0s !important; } }
+
+/* الشعار الحقيقي */
+.splash__badge { width: 168px; height: 168px; overflow: hidden; }
+.splash__logo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+@media (max-width: 700px) { .splash__badge { width: 148px; height: 148px; } .splash__logo { width: 100%; height: 100%; } }
+.brand-logo { padding: 0; object-fit: cover; }
+.brand--footer .brand-logo { padding: 0; }
