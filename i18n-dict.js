@@ -1140,5 +1140,6 @@ window.I18N_DICT = {
 "طباعة الورقة / PDF": ["Imprimer la feuille / PDF", "Print the sheet / PDF"],
 "لا يتم حفظ رقم البطاقة الوطنية ولا إرساله إلى أي خادم. يبقى في هذه الصفحة فقط، ويصل إلى المؤسسة عبر رسالة واتساب التي ترسلها بنفسك.": ["Le numéro de la carte nationale n'est ni enregistré ni envoyé à un serveur. Il reste uniquement sur cette page et n'arrive à l'établissement que par le message WhatsApp que vous envoyez vous-même.", "The national ID number is not saved or sent to any server. It stays on this page only and reaches the school only through the WhatsApp message you send yourself."],
 "ESP 2، Bd Bouakkaz، مراكش، المملكة المغربية": ["ESP 2, Bd Bouakkaz, Marrakech, Maroc", "ESP 2, Bd Bouakkaz, Marrakech, Morocco"],
-"خريطة مؤسسة النضج": ["Plan de l'Institution Annodje", "Map of Institution Annodje"]
+"خريطة مؤسسة النضج": ["Plan de l'Institution Annodje", "Map of Institution Annodje"],
+"إرسال الطلب عبر واتساب <span aria-hidden=\"true\">←</span>": ["Envoyer la demande par WhatsApp <span aria-hidden=\"true\">←</span>", "Send the request on WhatsApp <span aria-hidden=\"true\">←</span>"]
 };
