@@ -239,27 +239,31 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .section-kicker { margin-bottom: 18px; }
   .about__copy h2, .method h2, .contact h2 { font-size: 36px; }
   .values-grid { margin-top: 28px; }
-  .value-card--dark { min-height: 240px; }
-  .value-card { min-height: 120px; }
+  .value-card--dark { min-height: 240px !important; }
+  .value-card { min-height: 120px !important; }
   .section-heading { margin-bottom: 20px; }
-  .program-card { min-height: 260px; }
+  .program-card { min-height: 260px !important; }
+  .program-card { padding: 22px 22px 20px; }
+  .program-icon { margin: 18px 0 14px !important; }
+  .program-meta { margin-top: 18px !important; }
+  .program-card > a { bottom: 16px; }
   .method__intro .section-kicker { margin-bottom: 20px; }
   .steps { padding-top: 30px; }
-  .stats-grid { min-height: 150px; padding: 22px 0; row-gap: 16px; }
-  .testimonial, .testimonial--large { min-height: 200px; }
+  .stats-grid { min-height: 150px !important; padding: 22px 0; row-gap: 16px; }
+  .testimonial, .testimonial--large { min-height: 200px !important; }
   .goals-values__heading .section-kicker { margin-bottom: 18px; }
   .goals-values__body { margin-top: 28px; }
   .core-values { margin-top: 28px; }
-  .core-value { min-height: 120px; }
-  .life-feature { min-height: 320px; }
+  .core-value { min-height: 120px !important; }
+  .life-feature { min-height: 320px !important; }
   .life-feature__label { margin-top: 24px; }
-  .activity-card { min-height: 190px; }
+  .activity-card { min-height: 190px !important; }
   .activity-card__icon { margin-bottom: 18px; }
   .campus__layout { gap: 28px; }
   .contact__intro { padding-bottom: 22px; }
   .contact-panel { padding: 34px 20px 20px; }
   .footer-grid { gap: 26px 18px; }
-  .contact-hero__inner { min-height: 280px; }
+  .contact-hero__inner { min-height: 280px !important; }
   .contact-hero__copy { padding: 36px 0 14px; }
   .contact-main__layout { gap: 30px; }
   .map-frame { height: 240px; }
