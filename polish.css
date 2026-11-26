@@ -168,3 +168,10 @@ html[lang^="ar"] .eyebrow, html[lang^="ar"] .eyebrow * { letter-spacing: 0 !impo
   .map-frame { height: 240px !important; }
   .sitemap-box { padding: 26px 20px !important; }
 }
+
+/* levels: single swipe row on mobile */
+@media (max-width: 700px) {
+  .programs-grid--levels { display: flex !important; flex-wrap: nowrap; gap: 12px !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 2px 14px; margin-inline: -2px; overscroll-behavior-x: contain; scrollbar-width: none; }
+  .programs-grid--levels::-webkit-scrollbar { display: none; }
+  .programs-grid--levels .program-card { flex: 0 0 78%; scroll-snap-align: center; min-height: 270px !important; }
+}
