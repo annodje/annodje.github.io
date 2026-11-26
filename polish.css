@@ -188,3 +188,24 @@ html[lang^="ar"] .eyebrow, html[lang^="ar"] .eyebrow * { letter-spacing: 0 !impo
 .reg-cta a:hover { transform: translateY(-2px); }
 .lang-ltr .reg-cta { direction: ltr; }
 @media (max-width: 700px) { .reg-cta { margin-top: 16px; } .reg-cta a { flex: 1 1 0; padding: 12px 10px; font-size: 15px; } }
+
+/* day-at-school cards: single swipe row on mobile, no overlap */
+@media (max-width: 700px) {
+  .activity-grid { display: flex !important; flex-wrap: nowrap; gap: 10px !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 2px 2px 12px; margin-top: 12px !important; overscroll-behavior-x: contain; scrollbar-width: none; }
+  .activity-grid::-webkit-scrollbar { display: none; }
+  .activity-grid .activity-card { flex: 0 0 62%; scroll-snap-align: center; min-height: 0 !important; padding: 16px 16px 40px !important; }
+  .activity-card__icon { margin-bottom: 12px !important; font-size: 24px; }
+  .activity-card h3 { font-size: 16px !important; line-height: 1.5; }
+  .activity-card p { font-size: 12px !important; line-height: 1.7; }
+  .activity-card__tag { bottom: 12px !important; }
+}
+
+/* core values: single swipe row on mobile */
+@media (max-width: 700px) {
+  .core-values { display: flex !important; flex-wrap: nowrap; gap: 10px !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 2px 2px 12px; overscroll-behavior-x: contain; scrollbar-width: none; margin-top: 20px !important; }
+  .core-values::-webkit-scrollbar { display: none; }
+  .core-values .core-value { flex: 0 0 56%; scroll-snap-align: center; min-height: 0 !important; padding: 16px !important; }
+  .core-value__icon { margin-bottom: 10px !important; }
+  .core-value h3 { font-size: 17px !important; }
+  .core-value p { font-size: 12px !important; line-height: 1.7; }
+}
