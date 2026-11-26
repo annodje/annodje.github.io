@@ -94,11 +94,11 @@ input:focus, textarea:focus, select:focus { border-color: var(--orange); box-sha
 .site-footer { background-image: var(--zellige-light); background-size: 64px 64px; position: relative; }
 .site-footer::before { content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; height: 14px; background: repeating-linear-gradient(90deg, var(--orange) 0 18px, var(--navy-deep) 18px 22px, var(--mint-deep) 22px 40px, var(--navy-deep) 40px 44px); opacity: .85; }
 /* section header ornament: eight-point star divider under each heading */
-.section-heading h2::after, .about h2::after, .method h2::after, .voices h2::after, .goals-values h2::after {
+.section-heading h2::after, .about h2::after, .method h2::after, .voices h2::after, .goals-values h2::after, .campus h2::after, .contact h2::after, .contact-aside__block h2::after {
   content: ""; display: block; width: 150px; height: 15px; margin-top: 16px;
   background: var(--star-divider) no-repeat center / contain;
 }
-html[lang^="ar"] .section-heading h2::after, html[lang^="ar"] .about h2::after, html[lang^="ar"] .method h2::after, html[lang^="ar"] .voices h2::after { margin-right: 0; margin-left: auto; }
+html[lang^="ar"] .section-heading h2::after, html[lang^="ar"] .about h2::after, html[lang^="ar"] .method h2::after, html[lang^="ar"] .voices h2::after, html[lang^="ar"] .campus h2::after, html[lang^="ar"] .contact h2::after { margin-right: 0; margin-left: auto; }
 /* arch frame on the hero image */
 .hero-image-wrap img { border-radius: 220px 220px 24px 24px !important; box-shadow: 0 0 0 8px var(--paper), 0 0 0 10px var(--orange-soft), 0 28px 60px rgba(22,50,79,.2); }
 .campus__frame img { border-radius: 160px 160px 18px 18px !important; }
