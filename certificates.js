@@ -68,17 +68,17 @@
       diamond(sx, y + 20, 11, true);
       tx(title, rtl ? sx - 26 : sx + 26, y + 20, 32, 700, INK);
       c.fillStyle = LN; c.fillRect(M, y + 50, IW, 2);
-      y += 66;
+      y += 58;
     }
     function field(label, value, x, w, minH, fs) {
       fs = fs || 34;
       c.font = "400 " + fs + "px " + FONT;
       var lines = wrap(c, value, w - 2 * pad), lh = Math.round(fs * 1.3);
-      var bh = Math.max(minH || 72, lines.length * lh + 28);
+      var bh = Math.max(minH || 60, lines.length * lh + 28);
       tx(label, rtl ? x + w : x, y + 14, 24, 700, GR);
       rr(x, y + 34, w, bh, 10); c.fillStyle = LG; c.fill(); c.strokeStyle = LN; c.lineWidth = 2; c.stroke();
       for (var i = 0; i < lines.length; i++) tx(lines[i], rtl ? x + w - pad : x + pad, y + 34 + 14 + lh / 2 + i * lh, fs, 400, INK);
-      return bh + 34 + 18;
+      return bh + 34 + 10;
     }
     section(t.sec1);
     y += field(t.rows[1], d[1], M, IW);
@@ -90,9 +90,9 @@
     y += Math.max(h1, h2);
     section(t.sec3);
     y += field(t.rows[0], d[0], M, IW);
-    y += field(t.rows[6], d[6], M, IW, 150, d[6].length > 220 ? 28 : 32);
+    y += field(t.rows[6], d[6], M, IW, 110, d[6].length > 220 ? 28 : 32);
     /* footer: received line, signature box, stamp box */
-    var fy = Math.max(y + 24, 1440);
+    var fy = Math.max(y + 20, 1380);
     tx(t.recv, xs, fy, 32, 400, INK);
     var by = fy + 44, bh = Math.min(170, 1660 - by), bw = 500;
     var sx = rtl ? W - M - bw : M, tx2 = rtl ? M : W - M - bw;
