@@ -227,3 +227,41 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .activity-years { gap: 8px; }
   .activity-year { padding: 5px 16px; }
 }
+
+/* mobile spacing tightening */
+@media (max-width: 700px) {
+  .section-space { padding: 52px 0; }
+  .hero__content { padding: 34px 0 20px; }
+  .hero h1 { font-size: clamp(40px, 12.5vw, 60px); }
+  .hero__proof { margin-top: 22px; }
+  .hero__visual { padding: 12px 22px 44px; }
+  .hero-video { margin-top: 0; }
+  .section-kicker { margin-bottom: 18px; }
+  .about__copy h2, .method h2, .contact h2 { font-size: 36px; }
+  .values-grid { margin-top: 28px; }
+  .value-card--dark { min-height: 240px; }
+  .value-card { min-height: 120px; }
+  .section-heading { margin-bottom: 20px; }
+  .program-card { min-height: 260px; }
+  .method__intro .section-kicker { margin-bottom: 20px; }
+  .steps { padding-top: 30px; }
+  .stats-grid { min-height: 150px; padding: 22px 0; row-gap: 16px; }
+  .testimonial, .testimonial--large { min-height: 200px; }
+  .goals-values__heading .section-kicker { margin-bottom: 18px; }
+  .goals-values__body { margin-top: 28px; }
+  .core-values { margin-top: 28px; }
+  .core-value { min-height: 120px; }
+  .life-feature { min-height: 320px; }
+  .life-feature__label { margin-top: 24px; }
+  .activity-card { min-height: 190px; }
+  .activity-card__icon { margin-bottom: 18px; }
+  .campus__layout { gap: 28px; }
+  .contact__intro { padding-bottom: 22px; }
+  .contact-panel { padding: 34px 20px 20px; }
+  .footer-grid { gap: 26px 18px; }
+  .contact-hero__inner { min-height: 280px; }
+  .contact-hero__copy { padding: 36px 0 14px; }
+  .contact-main__layout { gap: 30px; }
+  .map-frame { height: 240px; }
+  .sitemap-box { padding: 26px 20px; }
+}
