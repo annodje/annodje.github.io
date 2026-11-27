@@ -92,19 +92,6 @@
           <span>نُنمّي الفضول</span><i>✦</i><span>نوسّع المدارك</span><i>✦</i><span>نصنع الأثر</span><i>✦</i><span>نُنمّي الفضول</span><i>✦</i><span>نوسّع المدارك</span>
         </div>
       </section>
-
-      <section class="promo-video section-space" id="video" aria-labelledby="video-title">
-        <div class="container">
-          <div class="promo-video__head">
-            <p class="overline">اكتشفوا مؤسسة النضج</p>
-            <h2 id="video-title">فيديو تعريفي</h2>
-            <p>سبورات رقمية تفاعلية، وأساتذة ومربّيات متميّزون، وبيئة آمنة ومحفّزة.</p>
-          </div>
-          <div class="promo-video__frame">
-            <video id="promo-video" controls preload="none" playsinline poster="/4-poster-ar.jpg" src="/1-promo-ar.mp4" aria-label="فيديو تعريفي بمؤسسة النضج"></video>
-          </div>
-        </div>
-      </section>
       <section class="about section-space" id="about" aria-labelledby="about-title">
         <div class="container about__layout">
           <div class="section-kicker reveal"><span>01</span><div></div><span>من نحن</span></div>
@@ -285,18 +272,6 @@
           setTimeout(function () { s.classList.add('splash--hide'); setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 800); }, 2300);
         }
         document.querySelectorAll('.brand-logo').forEach(function (im) { im.addEventListener('error', function () { im.style.display = 'none'; }); if (im.complete && im.naturalWidth === 0) im.style.display = 'none'; });
-      })();
-    </script>
-      <script>
-      (function () {
-        var V = { ar: ["/1-promo-ar.mp4", "/4-poster-ar.jpg"], fr: ["/2-promo-fr.mp4", "/5-poster-fr.jpg"], en: ["/3-promo-en.mp4", "/6-poster-en.jpg"] };
-        function set(l) {
-          var v = document.getElementById("promo-video"), d = V[l] || V.ar;
-          if (!v || v.getAttribute("src") === d[0]) return;
-          v.pause(); v.setAttribute("poster", d[1]); v.setAttribute("src", d[0]); v.load();
-        }
-        document.addEventListener("langchange", function (e) { set(e.detail); });
-        window.addEventListener("load", function () { if (window.I18N) set(window.I18N.lang()); });
       })();
     </script>
     <script src="/hero-video.js?v=1"></script>
