@@ -36,9 +36,9 @@ window.I18N_DICT = {
 "Nos objectifs et valeurs",
 "Our goals and values"
 ],
-"حياة الطلاب": [
+"حياة التلاميذ": [
 "Vie des élèves",
-"Student life"
+"Pupil life"
 ],
 "الأنشطة": [
 "Activités",
@@ -92,9 +92,9 @@ window.I18N_DICT = {
 "N",
 "N"
 ],
-"تلميذًا وطالبًا نرافقهم": [
-"élèves et étudiants que nous accompagnons",
-"students we support"
+"تلميذًا نرافقهم": [
+"élèves que nous accompagnons",
+"pupils we support"
 ],
 "نتعلّم معًا": [
 "Apprendre ensemble",
@@ -300,9 +300,9 @@ window.I18N_DICT = {
 "Votre journée ici<br><em>ne ressemble pas à la veille.</em>",
 "Your day here<br><em>is never like yesterday.</em>"
 ],
-"في النضج، المدرسة ليست مقعدًا وكتابًا فقط؛ إنها مساحة نابضة يكتشف فيها الطالب ميوله، ويكوّن صداقاته، ويجد صوته.": [
+"في النضج، المدرسة ليست مقعدًا وكتابًا فقط؛ إنها مساحة نابضة يكتشف فيها التلميذ ميوله، ويكوّن صداقاته، ويجد صوته.": [
 "À Annodje, l'école n'est pas seulement un siège et un livre ; c'est un espace vivant où l'élève découvre ses goûts, se fait des amis et trouve sa voix.",
-"At Annodje, school is not only a seat and a book; it is a lively space where students discover their interests, make friends and find their voice."
+"At Annodje, school is not only a seat and a book; it is a lively space where pupils discover their interests, make friends and find their voice."
 ],
 "حياة متوازنة": [
 "Une vie équilibrée",
@@ -312,9 +312,9 @@ window.I18N_DICT = {
 "Nous apprenons, bougeons,<br><em>et grandissons ensemble.</em>",
 "We learn, move,<br><em>and grow together.</em>"
 ],
-"كل يوم فرصة جديدة للتجربة والمشاركة وصناعة ذكرى جميلة تبقى مع الطالب.": [
+"كل يوم فرصة جديدة للتجربة والمشاركة وصناعة ذكرى جميلة تبقى مع التلميذ.": [
 "Chaque jour est une nouvelle occasion d'essayer, de participer et de créer un beau souvenir qui reste avec l'élève.",
-"Every day is a new chance to try, take part and make a lovely memory that stays with the student."
+"Every day is a new chance to try, take part and make a lovely memory that stays with the pupil."
 ],
 "مجتمع واحد": [
 "Une seule communauté",
@@ -328,9 +328,9 @@ window.I18N_DICT = {
 "Un début plein d'enthousiasme",
 "A start full of energy"
 ],
-"نستقبل صباحنا بطاقة إيجابية، ونخطط ليوم يعرف فيه كل طالب ما يستطيع أن ينجزه.": [
+"نستقبل صباحنا بطاقة إيجابية، ونخطط ليوم يعرف فيه كل تلميذ ما يستطيع أن ينجزه.": [
 "Nous accueillons le matin avec une énergie positive et préparons une journée où chaque élève sait ce qu'il peut accomplir.",
-"We greet the morning with positive energy and plan a day in which every student knows what they can achieve."
+"We greet the morning with positive energy and plan a day in which every pupil knows what they can achieve."
 ],
 "صباحًا": [
 "Le matin",
@@ -798,7 +798,7 @@ window.I18N_DICT = {
 ],
 "أطفال وتلاميذ المؤسسة يحيون ذكرى عيد الوحدة بالأعلام والأناشيد والتلوين والأشغال اليدوية.": [
 "Les enfants et élèves de l'établissement célèbrent l'anniversaire de la fête de l'Unité avec des drapeaux, des chants, du coloriage et des travaux manuels.",
-"The school's children and students mark Unity Day with flags, songs, coloring and handicrafts."
+"The school's children and pupils mark Unity Day with flags, songs, coloring and handicrafts."
 ],
 "🌱🥕 Le potager d'Annodje 🍅🥬": [
 "🌱🥕 Le potager d'Annodje 🍅🥬",
@@ -878,7 +878,7 @@ window.I18N_DICT = {
 ],
 "اللقاء التواصلي الثاني مع آباء وأمهات تلاميذ المستوى الثانوي": [
 "Deuxième rencontre avec les parents des élèves du secondaire",
-"Second meeting with parents of secondary-level students"
+"Second meeting with parents of secondary-level pupils"
 ],
 "Club de karaté Annodje": [
 "Club de karaté Annodje",
@@ -894,7 +894,7 @@ window.I18N_DICT = {
 ],
 "اللقاء التواصلي الأول مع آباء وأمهات تلاميذ المستوى الثانوي": [
 "Première rencontre avec les parents des élèves du secondaire",
-"First meeting with parents of secondary-level students"
+"First meeting with parents of secondary-level pupils"
 ],
 "Annodje Karate Club": [
 "Annodje Karate Club",
@@ -1132,8 +1132,8 @@ window.I18N_DICT = {
 "الاسم الكامل لولي الأمر": ["Nom complet du tuteur", "Guardian's full name"],
 "رقم البطاقة الوطنية (CIN)": ["Numéro de la carte nationale (CIN)", "National ID number (CIN)"],
 "مثال: AB123456": ["Exemple : AB123456", "Example: AB123456"],
-"اسم التلميذ(ة)": ["Nom de l'élève", "Student's name"],
-"الاسم الكامل للتلميذ(ة)": ["Nom complet de l'élève", "Student's full name"],
+"اسم التلميذ(ة)": ["Nom de l'élève", "Pupil's name"],
+"الاسم الكامل للتلميذ(ة)": ["Nom complet de l'élève", "Pupil's full name"],
 "سبب الطلب": ["Motif de la demande", "Reason for the request"],
 "اذكر سبب طلب الشهادة": ["Indiquez le motif de la demande", "State the reason for the request"],
 "إرسال الطلب عبر واتساب": ["Envoyer la demande par WhatsApp", "Send the request on WhatsApp"],
